@@ -21,9 +21,9 @@ Probes
 	Network Isolation	
 
 	Storage Performance
-		probe - writeReadDisk
+		probe - writeReadVolumes
 
 	Service Performance
-		probe - novacinderUnderHD
+		probe - novacinderUnderHD (Test_ambiente.sh+ciclo_richieste.sh)
 
 
