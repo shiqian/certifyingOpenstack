@@ -18,7 +18,8 @@ Probes
 		probe - testEncryption
 		probe - findClearMapper
 
-	Network Isolation	
+	Network Isolation
+		probe - sgnetwork	
 
 	Storage Performance
 		probe - writeReadVolumes
