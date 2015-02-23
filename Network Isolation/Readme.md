@@ -2,23 +2,35 @@ Network Isolation
 
 The script is written following the Certification Framework requirement. 
 
-##Input configuration
+Input configuration
 The input configuration is a .ini file parsed via ConfigParser (for now. This behaviour will be changed with the next testAgent release)
 
 [0]
 MIN_PORT=
+
 MAX_PORT=
+
 TARGET_IP=
+
 TARGET_UUID=
 [1]
+
 OS_AUTH_URL=
+
 OS_TENANT_NAME=
+
 OS_TENANT_ID=
+
 OS_USERNAME=
+
 OS_PASSWORD=
+
 OS_REGION_NAME=
+
 [2]
+
 ENABLE_TCP_SCAN=
+
 ENABLE_UDP_SCAN=
 
 Explanation:
@@ -27,10 +39,9 @@ Explanation:
     -   MAX_PORT
         +   These two parameters define a range of ports to be scanned. They can be set as MIN_PORT=1 and MAX_PORT=65535 to cover the full port range.
     -   TARGET_IP
-        +   The target IP address
-            *   Possible improvement: check if the input IP is assigned to the host
+        +   The target IP address for the HoneyPot VM (we left the creation to the user)
     -   TARGET_UUID
-        +   The OpenStack's UUID of the target
+        +   The OpenStack's UUID of the target VM
 *   1 - Authentication
     -   OS_AUTH_URL
     -   OS_TENANT_NAME
@@ -49,5 +60,6 @@ Explanation:
 
     UDP SCAN and TCP SYN SCAN cause the test to run slower.
 
-##Future improvements
-    Check real coherency between iptables's output and security group's definition.
+To run the script type:
+    
+    $python sgnetwork.py --input config.cfg
