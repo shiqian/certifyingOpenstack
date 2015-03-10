@@ -28,3 +28,7 @@ Probes
 		probe - novacinderUnderHD (Test_ambiente.sh+ciclo_richieste.sh)
 
 
+The Test Based Certification Framework is available at
+- Test Manager : https://github.com/fgaudenzi/testManager
+- Test Agent   : https://github.com/fgaudenzi/testAgent
+
