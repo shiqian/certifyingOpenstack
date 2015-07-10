@@ -13,7 +13,7 @@ SSL/TSL script
 Once you have your NMap ready, you must replace the information in inputHttps.cfg with you configuration.
 Then you can run:
 
-	$python Https_Driver.py --input inputHttps.cfg --output evidenceHttsp.log
+	$python https_Driver.py -i inputHttps.cfg -o evidenceHttsp.log
 
 
 File Access Policy script
